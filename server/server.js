@@ -66,11 +66,6 @@ app.delete('/todos/:id', (req, res) => {
   }).catch((e) => {
     res.status(400).send();
   });
-    // success
-      // if no doc, send 404
-      // if doc, send doc back with 200
-    // error
-      // 400 with empty body
 });
 
 app.patch('/todos/:id', (req, res) => {
